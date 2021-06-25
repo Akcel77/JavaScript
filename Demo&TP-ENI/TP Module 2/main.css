@@ -10,9 +10,17 @@ h1{
     font-style: italic;
     float: right;
 }
-li{
+li::marker{
     font-size: 1.5rem;
+}
+li{
+    margin-bottom: 3rem;
 }
 span{
     width: 5rem;
+}
+hr{
+    width: 50%;
+    margin: 5rem auto 0 5rem;
+    
 }

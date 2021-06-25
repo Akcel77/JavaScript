@@ -15,6 +15,7 @@ function add(){
         var listeCitation = document.createElement("li");
         var pCitation = document.createElement("p");
         var pUser = document.createElement("p");
+        var delimitation = document.createElement("hr")
 
         pCitation.innerText = citation;
         pUser.innerText = `Par ${auteur}, le ${day}/${month}/${year}`;
@@ -22,10 +23,11 @@ function add(){
         pUser.className = "user";
         listeCitation.addEventListener("click", del);
 
-        var listeResultat = document.getElementById("listeResultat");
-        listeResultat.appendChild(listeCitation);
-        listeResultat.appendChild(pCitation);
-        listeResultat.appendChild(pUser);
+        var liResuslt = document.getElementById("listeResultat");
+        liResuslt.appendChild(listeCitation);
+        listeCitation.appendChild(pCitation);
+        listeCitation.appendChild(pUser);
+        listeCitation.appendChild(delimitation);
 
         document.getElementById("citation").value = "";
         document.getElementById("auteur").value = "";
