@@ -36,9 +36,9 @@ function add(){
     document.getElementById("citation").focus;
 }
 
-function del(){
-    var cit = event.currentTarget.getElementsByTagName("p")[0].innerText
-    if(confirm(`Voulez vous supprimer la citation "${cit}" ?`)){
+function del(event){
+    var citation = event.currentTarget.getElementsByTagName("p")[0].innerText
+    if(confirm(`Voulez vous supprimer la citation "${citation}" ?`)){
         event.currentTarget.parentNode.removeChild(event.currentTarget);
     }
 }
