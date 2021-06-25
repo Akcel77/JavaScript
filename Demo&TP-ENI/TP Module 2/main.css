@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    margin: 2rem auto;
+}
+.citation-block{
+    width: 60%;
+    margin: 2rem auto;
+}
+.user{
+    font-style: italic;
+    float: right;
+}
+li{
+    font-size: 1.5rem;
+}
