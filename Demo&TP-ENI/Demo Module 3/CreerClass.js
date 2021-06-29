@@ -1,10 +1,12 @@
 //Creation d'une classe
-var Sport = function (nom, description){
-    this.nom = nom || "Pas de nom";
-    this.description = description || "";
+class Sport {
+    constructor(nom, description) {
+        this.nom = nom || "Pas de nom";
+        this.description = description || "";
 
-    this.afficher = function(){
-        console.log(`${this.nom} ${this.description}`);
+        this.afficher = function () {
+            console.log(`${this.nom} ${this.description}`);
+        };
     }
 }
 var sport = new Sport("Squash", "un jeu de raquette");
