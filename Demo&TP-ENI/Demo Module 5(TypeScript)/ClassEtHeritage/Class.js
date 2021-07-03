@@ -13,7 +13,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-//Declaration d'un class en TS
+//Declaration d'un class en Typescript
 var Sport = /** @class */ (function () {
     function Sport(nom, description) {
         this.description = description;
