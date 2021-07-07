@@ -11,3 +11,6 @@ module BusinessObject{
 
 var sportModule : BusinessObject.Sport = new BusinessObject.Sport("Football", "Sport de ballon");
 sportModule.afficher();
+
+import Business = BusinessObject;
+var sportAlias = Business.Sport;
